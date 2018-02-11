@@ -1,0 +1,19 @@
+:host {
+  background-color: rgba(204, 1, 0, 0.46);
+}
+
+.flex-parent {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+
+app-login-dropdown {
+  float: right;
+}
+

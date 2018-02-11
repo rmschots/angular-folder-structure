@@ -1,0 +1,39 @@
+:host {
+  margin-right: 16px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 8px 16px;
+  user-select: none;
+}
+
+.login-button:hover {
+  background-color: rgba(204,1,0,0.27);
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 8px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.login-dropdown {
+  right: 0;
+  padding: 16px;
+  background-color: antiquewhite;
+  z-index: 9999999;
+  position: absolute;
+}
+
+form > * {
+  display: block;
+}

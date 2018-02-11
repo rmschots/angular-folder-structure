@@ -1,0 +1,11 @@
+<div class="login-button" (click)="toggleDropdown()">login<i class="arrow down"></i></div>
+
+<div *ngIf="dropdownShown" class="login-dropdown">
+  <form>
+    <label for="username">username</label>
+    <input id="username"/>
+    <label for="password">password</label>
+    <input id="password"/>
+    <button>login</button>
+  </form>
+</div>
