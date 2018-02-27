@@ -6,3 +6,7 @@
   display: flex;
   justify-content: space-around;
 }
+
+.activated-button {
+  background-color: red;
+}

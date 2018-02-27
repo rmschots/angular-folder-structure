@@ -1,7 +1,10 @@
+<h3>SETTINGS</h3>
 <ng-container *ngIf="options$ | async; let options">
   <ng-container *ngIf="activeOption$ | async; let activeOption">
     <div id="settings-choices">
-      <button *ngFor="let option of options" (click)="selectedOption = option">{{option}}</button>
+      <button *ngFor="let option of options" (click)="selectedOption = option"
+              [ngClass]="{'activated-button': activeOption === option}">{{option}}
+      </button>
     </div>
     <hr/>
 

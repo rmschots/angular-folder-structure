@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Feature1Component } from './feature1.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,9 @@ import { Feature1Component } from './feature1.component';
           }, {
             path: 'subfeature2',
             loadChildren: './subfeature2/subfeature2.module#Subfeature2Module'
+          }, {
+            path: 'settings',
+            component: SettingsComponent
           }
         ]
       }

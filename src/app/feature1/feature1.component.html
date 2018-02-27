@@ -1,22 +1,15 @@
 <split direction="horizontal">
   <split-area size="20">
-    <app-feature1-nav></app-feature1-nav>
-  </split-area>
-  <split-area size="80">
     <split direction="vertical">
-      <split-area size="30">
-        <split direction="horizontal">
-          <split-area size="50">
-            <app-products></app-products>
-          </split-area>
-          <split-area size="50">
-            <app-settings></app-settings>
-          </split-area>
-        </split>
+      <split-area size="50">
+        <app-feature1-nav></app-feature1-nav>
       </split-area>
-      <split-area size="70">
-        <router-outlet></router-outlet>
+      <split-area size="50">
+        <app-products></app-products>
       </split-area>
     </split>
+  </split-area>
+  <split-area size="80">
+    <router-outlet></router-outlet>
   </split-area>
 </split>
