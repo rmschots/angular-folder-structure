@@ -2,10 +2,8 @@
 
 <div *ngIf="dropdownShown" class="login-dropdown">
   <form>
-    <label for="username">username</label>
-    <input id="username"/>
-    <label for="password">password</label>
-    <input id="password"/>
+    <app-input-field label="username"></app-input-field>
+    <app-input-field label="password"></app-input-field>
     <button>login</button>
   </form>
 </div>

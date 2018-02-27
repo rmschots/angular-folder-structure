@@ -1,3 +1,13 @@
-<p>
-  settings works!
-</p>
+<ng-container *ngIf="options$ | async; let options">
+  <ng-container *ngIf="activeOption$ | async; let activeOption">
+    <div id="settings-choices">
+      <button *ngFor="let option of options" (click)="selectedOption = option">{{option}}</button>
+    </div>
+    <hr/>
+
+    <app-settings-game *ngIf="activeOption === options[0]"></app-settings-game>
+    <app-settings-graphics *ngIf="activeOption === options[1]"></app-settings-graphics>
+    <app-settings-keybindings *ngIf="activeOption === options[2]"></app-settings-keybindings>
+  </ng-container>
+</ng-container>
+

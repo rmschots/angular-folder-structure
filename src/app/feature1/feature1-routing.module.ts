@@ -7,7 +7,16 @@ import { Feature1Component } from './feature1.component';
     RouterModule.forChild([
       {
         path: '',
-        component: Feature1Component
+        component: Feature1Component,
+        children: [
+          {
+            path: 'subfeature1',
+            loadChildren: './subfeature1/subfeature1.module#Subfeature1Module'
+          }, {
+            path: 'subfeature2',
+            loadChildren: './subfeature2/subfeature2.module#Subfeature2Module'
+          }
+        ]
       }
     ])
   ],

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginDropdownComponent implements OnInit {
 
-  dropdownShown: boolean = false;
+  dropdownShown = false;
 
   constructor() { }
 

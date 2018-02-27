@@ -5,10 +5,12 @@ import { ReusableComponent2Component } from './components/reusable-component2/re
 import { GlobalServiceService } from './services/global-service.service';
 import { RouterModule } from '@angular/router';
 import { AngularSplitModule } from 'angular-split';
+import { InputFieldComponent } from './components/input-field/input-field.component';
 
 const COMPONENTS = [
   ReusableComponent1Component,
-  ReusableComponent2Component
+  ReusableComponent2Component,
+  InputFieldComponent
 ];
 
 const SERVICES = [
@@ -38,7 +40,8 @@ const MODULES = [
   ],
   declarations: [
     ...COMPONENTS,
-    ...PIPES
+    ...PIPES,
+    InputFieldComponent
   ]
 })
 export class SharedModule {

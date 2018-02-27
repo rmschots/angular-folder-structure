@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Subfeature2Component } from './subfeature2.component';
+import { Feature1SharedModule } from '../shared/shared.module';
+import { Subfeature2RoutingModule } from './subfeature2-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    Subfeature2RoutingModule,
+    Feature1SharedModule
   ],
   declarations: [Subfeature2Component]
 })
